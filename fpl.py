@@ -41,12 +41,11 @@ def getDeadline():
         print("Error in fetching FPL")
         return None
     
-def formatMessage():
+def getDeadlineMessage():
     deadline = getDeadline()
     if isinstance(deadline, datetime):
         nd_value_formatted = deadline.strftime("%I:%M %p" if deadline.minute > 0 else "%I %p")
         message = "Teams set karlo deadline aaj " + nd_value_formatted + " baje hai"
-        print(message)
+        return message
     else:
-        print("Error")
-
+        return constants.DEADLINE_ERR
