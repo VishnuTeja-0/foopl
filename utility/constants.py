@@ -8,3 +8,6 @@ WA_SEND_MESSAGE = "http://localhost:3000/send/message"
 # Error Messages
 DEADLINE_ERR = "There was an error in fetching the gameweek deadline"
 GROUPS_ERR = "There was an error in fetching your groups"
+
+# Config Values
+WA_COUNTRY_EXCEPTIONS = {86, 98, 963, 850, 979}
