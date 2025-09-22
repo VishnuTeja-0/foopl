@@ -117,6 +117,7 @@ if isConnected():
     label_message.pack(fill = X, pady = 2)
     entry_message.pack(expand = True, fill = BOTH)
     message_frame.pack(side = LEFT, expand = True, fill = BOTH, padx = (10, 2), pady = 10)
+
     # Schedule
     label_schedule = tb.Label(master = schedule_frame, 
                               text = 'Set Schedule',
@@ -147,6 +148,7 @@ if isConnected():
         tb.Radiobutton(master = schedule_frame, variable = mode_selected, text = sc_key, value = sc_value).pack(fill = X, padx = 2, pady = (5,0))
     mode_selected.set(1)
     schedule_frame.pack(side = LEFT, fill = Y, padx = 2, pady = 10)
+    
     # Status
     labelframe_status = tb.Labelframe(master = status_frame, 
                                   bootstyle = SECONDARY, 

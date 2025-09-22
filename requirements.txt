@@ -8,3 +8,4 @@ pycountry==24.6.1
 requests==2.32.3
 ttkbootstrap==1.10.1
 urllib3==2.2.2
+docker-compose==1.29.2
